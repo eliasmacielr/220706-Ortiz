@@ -70,7 +70,7 @@
   \addr{\affilnum{1}}{Polytechnic School - National University of Asuncion, Paraguay}}
 
 % corresponding author
-\corraddr{Email address of corresponding author; Tel: +1-111-111-1111; Fax:\\ +1-111-111-1111.
+\corraddr{inortiz@pol.una.py; Tel: +595 994 787424.
 }
 
 \begin{abstract}
@@ -147,7 +147,6 @@ subject to
         \dot{\overline{q}}(t)&\in {\mathcal D}_{\overline{q}(t)}, \forall t\in[t_0, t_f].
     \end{split}
 \end{equation}
-% where, for a smooth variation $q(s, t)$ of $\overline{q}$, with fixed endpoints, \[\delta q(\overline{q}(t)):= \frac{\partial}{\partial s}\Big|_{s=0}q(s, t),\] is the associated variational vector field.
 \end{definition}
 
 \begin{remark}
@@ -182,7 +181,7 @@ Table \ref{tab:types_of_systems_and_variational_principles} summarizes some kind
 \rotatebox[origin=c]{90}{\hspace{1ex}\textbf{Nonconservative}\hspace{1ex}} &
   \begin{tabular}[c]{@{}c@{}}
     \textbullet Lagrange-d'Alembert principle\\ $\delta \int_a^b L(q, \dot{q}) \diff t + \int_a^b F \delta q \diff t = 0$.\\ \\
-    \textbullet Herglotz principle\\ $\delta z(b) = 0$. %$\dot{z} = L(t, q(t), \dot{q}(t), z(t))$.
+    \textbullet Herglotz principle\\ $\delta z(b) = 0$.
   \end{tabular}
     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}
     \textbullet Lagrange-d'Alembert principle\\ $\delta \int_a^b L(q, \dot{q}) \diff t + \int_a^b F^e \delta q \diff t = 0$,\\
@@ -672,171 +671,84 @@ The numerical experiments show that our integrator has good qualitative behavior
 
 It is also worth noticing that the anomaly displayed by the Lagrange-d'Alembert integrator (regarding Figure \ref{fig:foucault_sim_2_oscillation_plane}) disappears when we refine the time-step by a factor of 20, which certainly implies a computational cost that might be undesirable. This raises the question of whether this anomaly is geometric in nature or is it a purely numerical issue.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Results}
-The body text is in 12 point normal Times New Roman, 
-the line space is at least 15 point.
- 
-
-
-\subsection{Figure/image and caption}
- Leave a space of one line before and after a figure or an image, i.e., one line between the main text and the top of the figure or image, and one line between the bottom of the figure or image and the caption. The caption has a default space of 12 $pt$ after it so the main text can continue below the caption. If no text follows the figure caption, do not leave any space between the caption and the next headline (the headline has a default space). 
- 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.8]{figure.pdf}
-\caption{Legend of the figure.}
-\label{Fig1}
-\end{center}
-\end{figure}
-
- 
- Figures should be numbered consecutively in the text. A figure can be referred explicitly in the text as Figure~\ref{Fig1}.
- 
- Use black and white graphic for line drawings. All lines should be at least 0.1 mm (0.3 $pt$) wide. Line drawings or scanned line drawings should have a resolution at least 600 dpi. Images with a large volume should be properly compressed within 1 MB each. Scanned images should be properly edited to balance the volume size and clarity of the image. 
- 
- Figure captions begin with \textbf{Figure x.} in bold, followed by the text. Do not add a full stop at the end of the caption. 
-
-\subsection{Tables and table titles}
-
-Table title should be placed above the table, numbered consecutively, and referred in the text like Table~\ref{table} or (Table~\ref{table}). There is no space between the table and table title. Leave a space of one line above the table title and one line below the bottom of the table. If a new first-level headline follows the table immediately, do not leave the space below the table.
-
-The font of the table title is size 12 but the font of the table contents can be sizes 8 to 12 depending on the best fit for the table. Table title begins with \textbf{Table x}. in bold, followed by the text. 
-
-\begin{table}[H]
-\begin{center}
-\caption{Caption of the table.}
-\begin{tabular}{ccc} \hline
- & & \\\hline
- & & \\
- & & \\
- & & \\\hline
-(Three-line table is preferred.)
-\end{tabular}
-	\label{table}
-\end{center}
-\end{table}
-
-\subsection{Mathematical formulae}
-Mathematical formulae should be numbered consecutively by placing the number in parentheses like (1), one TAB space away from the right line. Mathematical formulae should be typed using MS Word Equation or better using \emph{MathType}. Use size 10--12 for the main characters and size 6--8 for subscripts or superscripts. Leave a space of 6 $pt$ between two formula in separate lines. Some examples are shown below. 
-
-\begin{equation}
-\lim_{x \mapsto a^+ }f\left ( x \right )= \pm \infty \qquad \text{or} \qquad \lim_{x \mapsto a^- }f\left ( x \right )= \pm \infty
-\label{equation1}
-\end{equation}
-
-\begin{equation}
-\lim_{x \mapsto \infty }f\left ( x \right )=  a \qquad \text{or} \qquad \lim_{x \mapsto -\infty}f\left ( x \right )=  b
-\label{equation2}
-\end{equation}
-
-To cite a formula in the text, use the number like Equation~\ref{equation1}, or Eq~\ref{equation2}, or alike.
-
-
-
-\section{Reference style, citation, and cross-reference}
-Journal uses numbered style for referencing. Cite references in the text by placing number(s) in square brackets by the end of a sentence~\cite{A1,A2}, or immediately after the Author’s name, for example, Jackson~\cite{A3} outlined that …. If an article has two authors, list both surnames, e.g., Wang and Guo~\cite{A4} reported …. If an article has more than six authors, use the first author’s surname and et al., e.g., Chen et al.~\cite{A9} studied ….
-
-Three or more consecutive references can be placed in the same square brackets by joining the start number and the end number by a hyphen like~\cite{A5,A6,A7,A8}. References with separate numbers can be placed in the same square brackets with individual numbers separated by comms like~\cite{A2,A6,A9}. We recommend using software such as EndNote, RefWork or Mendeley to manage references. Otherwise, you have to manually edit the references according to different types of publications. Follow the examples shown in the list of references below for different types of publications~\cite{A10,A11,A12}.
-
-We recommend all references are cross-referenced between their appearances in the text and in the Reference list. AIMS production requires that each reference has DOI (if there is one).
 
 \section*{Acknowledgments}
 
-All sources of funding of the study must be disclosed
+C.E.S. acknowledges the support given by PRONII. I.O. and E.M. acknowledge partial support given by  FEEI-CONACYT-PROCIENCIA.
 
 \section*{Conflict of interest}
 
 The authors declare there is no conflict of interest.
 
-\begin{thebibliography}{99}
+
+\clearpage
+\bibliographystyle{plain}
+\bibliography{references}
 
 
-\bibitem{A1}
-     \newblock  FirstNameInitial.  MiddleNameInitial. LastName, % first name middle initial. and then last name.  Only the first character in the paper title is capitalized.
-     \newblock Title of the paper,
-     \newblock \emph{Name of the Journal}, \textbf{Volume} (Year), StaringPage--EndingPage.
-     \doilink{https://doi.org/xxxxx}
+\appendix
+\section{Discrete equations of the contact integrator with constraints for the falling disk}\label{App:Integrator-equations}
 
-% Example of a thesis:
-\bibitem{A2}
-    \newblock FirstNameInitial. LastName,
-    \newblock  \emph{Torsion Cycles and Set Theoretic Complete Intersection},
-    \newblock  Ph.D thesis, Washington University in St. Louis, 2006.
-   \doilink{https://doi.org/xxxxx}
+The following equations enumerated from \eqref{eq:first_equation_of_the_integrator} to (\ref{eq:last_equation_of_the_integrator}) correspond to the resulting equations of the integrator based on the discretization of the Herglotz variational principle with constraints that we propose in this work, applied to the problem of the falling disk described in Section \ref{sec:falling_disk}. Here we use a second-order discretization, according to Remark \ref{rem:order-discretization}.
+\small
 
-% No author names:
-\bibitem{A3}
-\emph{SARS Expert Committee, SARS in Hong Kong: From Experience to
-Action}, Report of Hong Kong SARS Expert Committee,
-\newblock 2003. Available from: \url{http://www.sars-expertcom.gov.hk/english/reports/reports.html}.
+\begin{equation}\label{eq:first_equation_of_the_integrator}
+    \begin{split}
+      &R \cos(\phi_j) \left[\frac{F^X_j}{2} - \frac{1}{\frac{\alpha h}{2} + 1} \left(\frac{F^X_j}{2} - \frac{m (X_{j-1} - X_j)}{h^2}\right) \left(\frac{\alpha h}{2} - 1\right) + \frac{m (X_j - X_{j+1})}{h^2} \right] \\
+  &+ R \sin(\phi_j) \left[ \frac{F^Y_j}{2} - \frac{1}{\frac{\alpha h}{2} + 1} \left(\frac{F^Y_j}{2} - \frac{m (Y_{j-1} - Y_j)}{h^2}\right) \left(\frac{\alpha h}{2} - 1\right) + 
+  \frac{m (Y_j - Y_{j+1})}{h^2} \right]\\
+  &-\frac{1}{\frac{\alpha h}{2} + 1}
+  \left(\frac{\alpha h}{2} - 1\right) 
+  \left[\frac{F^{\psi}_j}{2} - \frac{1}{h} I_A \left( \frac{\psi_{j-1} - \psi_j}{h} - \sin\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \frac{\phi_{j-1} - \phi_j}{h}\right)\right] \\
+  &+\frac{1}{h} I_A \left( \frac{\psi_j - \psi_{j+1}}{h} - 
+  \sin\left(\frac{\theta_j + \theta_{j+1}}{2}\right) 
+  \frac{\phi_j - \phi_{j+1}}{h} \right) +\frac{F^{\psi}_j}{2}= 0.
+    \end{split}
+\end{equation}
 
-% No title:
-\bibitem{A4}
-\newblock F. Abergel, R. Tachet,
-\newblock
-\newblock work in progress.
+\begin{equation}
+    \begin{split}
+      &R \cos\left(\frac{\phi_j + \phi_{j+1}}{2}\right) \frac{\psi_j - \psi_{j+1}}{h} - 
+  \frac{X_j - X_{j+1}}{h}\\
+  &- R \cos\left(\frac{\phi_j + \phi_{j+1}}{2}\right) \sin\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \frac{\phi_j - \phi_{j+1}}{h}\\
+  &-R \cos\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \sin\left(\frac{\phi_j + \phi_{j+1}}{2}\right) 
+  \frac{\theta_j - \theta_{j+1}}{h} = 0.
+    \end{split}
+\end{equation}
 
-% Example of multiple authors:
-\bibitem{A5}  
-    \newblock Y. Benoist, P. Foulon, F. Labourie, % Use `and' connect the last two authors
-    \newblock Flots d'Anosov a distributions stable et instable
-     differentiables,
-    \newblock (French) [Anosov flows with stable and unstable differentiable
-     distributions], \emph{J. Amer. Math. Soc.}, \textbf{5} (1992), 33--74.
-      \doilink{https://doi.org/10.1090/S0894-0347-1992-1124979-1}
+\begin{equation}
+    \begin{split}
+      &R \sin\left(\frac{\phi_j + \phi_{j+1}}{2}\right) \frac{\psi_j - \psi_{j+1}}{h} - \frac{Y_j - Y_{j+1}}{h}\\ 
+      &- R \sin\left(\frac{\phi_j + \phi_{j+1}}{2}\right) \sin\left(\frac{\theta_j + \theta_{j+1}}{2}\right) 
+  \frac{\phi_j - \phi_{j+1}}{h}\\
+  &+R \cos\left(\frac{\phi_j + \phi_{j+1}}{2}\right) \cos\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \frac{\theta_j - \theta_{j+1}}{h} = 0.
+    \end{split}
+\end{equation}
 
-\bibitem{A6} 	
-\newblock  O. Diekmann, M. Gyllenberg, H. Huang, M. Kirkilionis, J. A. J. Metz, H. R. Thieme, 
-\newblock On the formulation and analysis of general deterministic structured population models. II. Nonlinear theory, 
-\emph{J. Math. Biol.}, \textbf{43} (2001), 157--189.
-       \doilink{https://doi.org/10.1016/j.media.2013.04.012}
+\begin{equation}
+    \begin{split}
+        &\frac{F^{\theta}_j}{m} + \frac{I_T}{m} \left(\frac{2(\theta_j - \theta_{j+1})}{h^2} - \frac{\sin(\theta_j+\theta_{j+1})}{2} \frac{(\phi_j - \phi_{j+1})^2}{h^2}\right)+R g\sin(\theta_j)\\
+  &+R^2\left( \sin^2\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \frac{2(\theta_j - \theta_{j+1})}{h^2} + \frac{\sin(\theta_j+\theta_{j+1})}{2} \frac{(\theta_j - \theta_{j+1})^2}{h^2}\right)\\
+  &+\frac{\alpha h-2}{\alpha h+2} \Bigg\{ \frac{I_T}{m} \left[\frac{2(\theta_{j-1} - \theta_j)}{h^2} + \frac{\sin(\theta_{j-1}+\theta_j)}{2}\frac{(\phi_{j-1} - \phi_j)^2}{h^2}\right] - \frac{F^{\theta}_j}{m}- R g \sin(\theta_j)\\
+  &+R^2 \left[\sin^2\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \frac{2(\theta_{j-1} -  \theta_j)}{h^2} - \frac{\sin(\theta_{j-1}+\theta_j)}{2} \frac{(\theta_{j-1} - \theta_j)^2}{h^2}\right]\\
+  &+\frac{I_A (\phi_{j-1} - \phi_j)}{m} \cos\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \left[\frac{\psi_{j-1} - \psi_j}{h^2} - \sin\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \frac{\phi_{j-1} - \phi_j}{h^2}\right] \Bigg\}\\
+  &+2R \cos(\phi_j) \cos(\theta_j) \left[\frac{F^Y_j}{2m} - \frac{\alpha h-2}{\alpha h+2}\left(\frac{F^Y_j}{2m} - \frac{Y_{j-1} - Y_j}{h^2}\right) + \frac{Y_j - Y_{j+1}}{h^2}\right]\\
+  &-2R \cos(\theta_j) \sin(\phi_j) \left[\frac{F^X_j}{2m} - \frac{\alpha h-2}{\alpha h+2}\left(\frac{F^X_j}{2m} - \frac{X_{j-1} - X_j}{h^2}\right) + \frac{X_j - X_{j+1}}{h^2} \right]\\
+  & - \frac{I_A(\phi_j - \phi_{j+1})}{m}\cos\left(\frac{\theta_j + \theta_{j+1}}{2}\right)  \left[\frac{\psi_j - \psi_{j+1}}{h^2} - \sin\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \frac{\phi_j - \phi_{j+1}}{h^2}\right]  = 0.
+    \end{split}
+\end{equation}
 
-\bibitem{A7} 	
- S. Marchesseau, H. Delingette, M. Sermesant, R. Cabrera-Lozoya, C. Tobon-Gomez, P. Moireau, et al., 
-\newblock Personalization of a cardiac electromechanical model using reduced order unscented Kalman filtering from regional volumes, \emph{Med. Image Anal.}, \textbf{17} (2013), 816--829.
-       \doilink{https://doi.org/10.1016/j.media.2013.04.012}
+\begin{equation}\label{eq:last_equation_of_the_integrator}
+    \begin{split}
+        &\frac{F^{\phi}_j}{2}+ I_T \cos^2\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \frac{\phi_j - \phi_{j+1}}{h^2}\\
+        &- \frac{\alpha h - 2}{\alpha h+2} \Bigg\{ \frac{F^{\phi}_j}{2} - I_T \cos^2\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \frac{\phi_{j-1} - \phi_j}{h^2}\\
+  &+I_A \sin\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \left[\frac{\psi_{j-1} - \psi_j}{h^2} - \sin\left(\frac{\theta_{j-1} + \theta_j}{2}\right) \frac{\phi_{j-1} - \phi_j}{h^2}\right] \Bigg\}\\
+ &- R \cos(\phi_j) \sin(\theta_j) \left[\frac{F^X_j}{2} - \frac{\alpha h - 2}{\alpha h+2} \left(\frac{F^X_j}{2} - \frac{m (X_{j-1} - X_j)}{h^2}\right) + \frac{m (X_j - X_{j+1})}{h^2}\right]\\
+ &- R \sin(\phi_j) \sin(\theta_j) \left[\frac{F^Y_j}{2} - \frac{\alpha h - 2}{\alpha h+2} \left(\frac{F^Y_j}{2} - \frac{m (Y_{j-1} - Y_j)}{h^2}\right) + \frac{m (Y_j - Y_{j+1})}{h^2}\right]\\
+ & -
+  I_A \sin\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \left[\frac{\psi_j - \psi_{j+1}}{h^2} -
+  \sin\left(\frac{\theta_j + \theta_{j+1}}{2}\right) \frac{\phi_j - \phi_{j+1}}{h^2}\right]= 0.
+    \end{split}
+\end{equation}
 
-% Example of a preprint article with 7 digits archive number:
-\bibitem{A8}
-\newblock M. Entov, L. Polterovich, F. Zapolsky,
-\newblock Quasi-morphisms and the Poisson bracket,
-\newblock preprint, \arXiv{math/0605406}.
-
-% Example of an article in Academic Press or a book:
-\bibitem{A9} 
-    \newblock J. Serrin,
-    \newblock  Gradient estimates for solutions of nonlinear elliptic
-                     and parabolic equations,
-    \newblock  in \emph{Contributions to Nonlinear Functional Analysis} (eds. E.H. Zarantonello and Author 2),
-                Academic Press, (1971), 33--75.
-       \doilink{https://doi.org/10.1016/B978-0-12-775850-3.50017-0}
-
-% Example of a book in the reference:
-\bibitem{A10}  
-     \newblock J.  Smoller,
-     \newblock \emph{Shock Waves and Reaction-Diffusion Equations},
-     \newblock 2$^{nd}$ edition,  Springer-Verlag, New York, 1994.
-      \doilink{https://doi.org/10.1007/978-1-4612-0873-0}
-
-% Example of a preprint article with 8 digits archive number:
-\bibitem{A11}
-\newblock A. Teplinsky,
-\newblock Herman's theory revisited, preprint,
-\newblock \arXiv{0707.0078}.
-
-% Example of paper with MR number:
-\bibitem{A12} 
-     \newblock C.  Wolf,
-     \newblock A mathematical model for the propagation of a hantavirus in structured populations,
-     \newblock \emph{Discrete Contin. Dyn. Syst. B}, \textbf{4} (2004), 1065--1089.
-      \doilink{https://doi.org/10.3934/dcdsb.2004.4.1065}
-
-\end{thebibliography}
-
-
-For more questions regarding reference style, please refer to the \href{http://www.ncbi.nlm.nih.gov/books/NBK7256/}{Citing Medicine}.
-
-\section*{Supplementary (if necessary)}
 \end{document}
